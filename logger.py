@@ -6,8 +6,8 @@ class Logger:
 
     def __init__(self, current_folder):
         self.current_folder = current_folder
-        self.filename_log = current_folder + "logs/output_log.txt"
-        self.filename_erreur = current_folder + "logs/output_erreur.txt"
+        self.filename_log = current_folder + "/logs/output_log.txt"
+        self.filename_erreur = current_folder + "/logs/output_erreur.txt"
         self.file = open(self.filename_log, "w+")
         self.file.close()
         self.file = open(self.filename_erreur, "w+")

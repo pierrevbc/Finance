@@ -4,7 +4,8 @@ import os
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
 
-    log = Logger(os.getcwd())
-    get_ticker_info('msft')
+    logger = Logger(os.getcwd())
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    df = get_ticker_info('msft')
+
+    logger.log_message(df.tail())
