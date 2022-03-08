@@ -11,3 +11,4 @@ requests==2.27.1
 six==1.16.0
 urllib3==1.26.8
 yfinance==0.1.70
+stocksymbol==0.0.5
